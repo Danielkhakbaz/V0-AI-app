@@ -2,8 +2,8 @@ import { ReactNode } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Menu from "layout/dashboard/components/menu/menu";
-import { Button } from "layout/dashboard/components/button/button";
-import { Input } from "layout/dashboard/components/input/input";
+import { Button } from "components/button/button";
+import { Input } from "components/input/input";
 import {
   DropdownMenu,
   DropdownMenuTrigger,
