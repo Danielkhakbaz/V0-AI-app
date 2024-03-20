@@ -1,6 +1,8 @@
 import { ReactNode } from "react";
 import type { Metadata } from "next";
+import Dashboard from "layout/dashboard/dashboard";
 import { InterFont } from "theme/font";
+import "styles/globals.css";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -32,7 +34,9 @@ type RootLayoutProps = {
 const RootLayout = async ({ children }: RootLayoutProps) => {
   return (
     <html lang="en">
-      <body className={InterFont.className}>{children}</body>
+      <body className={InterFont.className}>
+        <Dashboard>{children}</Dashboard>
+      </body>
     </html>
   );
 };
